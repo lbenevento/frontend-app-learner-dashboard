@@ -47,6 +47,7 @@ subscribe(APP_READY, () => {
 });
 
 subscribe(APP_INIT_ERROR, (error) => {
+  console.log('[frontend-app-learner-dashboard] APP_INIT_ERROR', error);
   const root = createRoot(document.getElementById('root'));
 
   root.render(
